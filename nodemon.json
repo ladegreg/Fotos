@@ -1,0 +1,7 @@
+{
+  "env": {
+    "MONGO_USER": "max",
+    "MONGO_PASSWORD": "9h8b1mvFpCPWnefk",
+    "MONGO_DB": "fotos-db"
+  }
+}
