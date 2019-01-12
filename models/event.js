@@ -7,15 +7,19 @@ const eventSchema = new Schema({
   },
   description: {
     type: String,
-    require: true
+    required: true
   },
   price: {
     type: Number,
-    require: true
+    required: true
   },
   date: {
     type: Date,
-    require: true
+    required: true
+  },
+  creator: {
+    type: Schema.Types.ObjectId,
+    ref: 'User'
   }
 });
 
