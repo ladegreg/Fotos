@@ -4,7 +4,7 @@
   top: 0;
   width: 100%;
   height: 3.5rem;
-  background: #01d1d1;
+  background: #5101d1;
   padding: 0 1rem;
   display: flex;
   align-items: center;
@@ -16,7 +16,7 @@
 }
 
 .main-navigation_item {
-  margin: 0 0 0 1.5rem;
+  margin: 1.5rem;
 }
 
 .main-navigation_item ul {
@@ -24,19 +24,31 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  align-items: center;
 }
 
 .main-navigation_item li {
   margin: 0 1rem;
 }
 
-.main-navigation_item a {
+.main-navigation_item a,
+.main-navigation_item button {
   text-decoration: none;
-  color: #000000;
+  color: #ffffff;
+  padding: 0.25rem 0.5rem;
+  border: none;
+  font: inherit;
+  background: transparent;
+  cursor: pointer;
+  margin: 0
 }
 
 .main-navigation_item a:hover,
 .main-navigation_item a:active,
-.main-navigation_item a.active {
-  color: #f8e260;
+.main-navigation_item a.active,
+.main-navigation_item button :hover,
+.main-navigation_item button :active {
+  color: #5101d1;
+  background: #ffffff;
+  border-radius: 5px;
 }
