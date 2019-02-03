@@ -16,14 +16,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ladegreg/Fotos.git"
+    "url": "git+https://github.com/ladegreg/MERN-Stack-App2.git"
   },
   "author": "Grzegorz Lade",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ladegreg/Fotos/issues"
+    "url": "https://github.com/ladegreg/MERN-Stack-App2/issues"
   },
-  "homepage": "https://ladegreg.github.io/Fotos/",
+  "homepage": "https://ladegreg.github.io/MERN-Stack-App2/",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.3",
