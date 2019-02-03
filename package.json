@@ -1,19 +1,24 @@
 {
-  "name": "fotos",
+  "name": "mern-stack-app2",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "[**https://mern-stack-app2.herokuapp.com/**][page]",
+  "main": "server.js",
   "scripts": {
     "build": "react-scripts build",
     "deploy": "npm run build && gh-pages -d build",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js"
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix frontend",
+    "client-install": "npm install --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ladegreg/Fotos.git"
   },
-  "author": "",
+  "author": "Grzegorz Lade",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ladegreg/Fotos/issues"
@@ -22,14 +27,15 @@
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.3",
+    "concurrently": "^4.1.0",
     "express": "^4.16.4",
     "express-graphql": "^0.7.1",
     "gh-pages": "^2.0.1",
     "graphiql": "^0.12.0",
-    "graphql": "^14.0.2",
+    "graphql": "^14.1.1",
     "jsonwebtoken": "^8.4.0",
-    "mongoose": "^5.4.3",
-    "openode": "^1.9.0"
+    "mongoose": "^5.4.9",
+    "openode": "^1.9.1"
   },
   "devDependencies": {
     "nodemon": "^1.18.9"
