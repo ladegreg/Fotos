@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "engines": {
   "node": "10.15.1",
-  "npm": "5.6.0"
+  "npm": "6.7.0"
   },
   "description": "[**https://mern-stack-app2.herokuapp.com/**][page]",
   "main": "server.js",
@@ -16,7 +16,7 @@
     "client": "npm start --prefix frontend",
     "client-install": "npm install --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=true npm install --prefix frontend && npm run build --prefix frontend"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
   },
   "repository": {
     "type": "git",
