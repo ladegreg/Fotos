@@ -1,6 +1,9 @@
 {
   "name": "mern-stack-app2",
   "version": "1.0.0",
+  "engines": {
+  "node": "10.15.1"
+  },
   "description": "[**https://mern-stack-app2.herokuapp.com/**][page]",
   "main": "server.js",
   "scripts": {
